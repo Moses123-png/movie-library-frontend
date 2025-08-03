@@ -1,13 +1,31 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Moses and Martin Movie Library</title>
+  <link rel="stylesheet" href="/index.css">
+  <script type="module" src="/src/main.tsx" defer></script>
 </head>
-<body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.tsx"></script>
+<body class="bg-gradient-to-br from-white to-purple-100 text-gray-900">
+
+  <div class="flex flex-col items-center justify-center min-h-screen text-center p-6">
+    <h1 class="text-4xl font-bold mb-4 text-purple-700">🎬 Welcome to Moses & Martin Movie Library</h1>
+    <p class="text-lg mb-6">Enjoy free and premium movies anytime.</p>
+    
+    <div class="space-x-4 mb-6">
+      <a href="/movies" class="px-6 py-3 bg-purple-600 text-white rounded-lg shadow hover:bg-purple-700 transition">Enter Library</a>
+      <a href="/subscribe" class="px-6 py-3 bg-purple-300 text-purple-900 rounded-lg hover:bg-purple-400">Subscription</a>
+    </div>
+
+    <div class="text-sm mt-6 space-y-2">
+      <p>Contact us:</p>
+      <p>
+        <a href="https://wa.me/256789218570" class="text-green-600 hover:underline">📱 WhatsApp: 0789218570</a><br>
+        <a href="https://wa.me/256759159972" class="text-green-600 hover:underline">📱 WhatsApp: 0759159972</a>
+      </p>
+    </div>
+  </div>
+
 </body>
 </html>

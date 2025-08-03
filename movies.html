@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Moses & Martin Movie Library - Movies</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+      color: #fff;
+    }
+
+    header {
+      background-color: #1e1e2f;
+      padding: 20px;
+      text-align: center;
+      font-size: 26px;
+      font-weight: bold;
+      color: #ffcc00;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    .notice {
+      background: #ffcc00;
+      color: #000;
+      padding: 10px 20px;
+      text-align: center;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    .movies-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .movie-card {
+      background-color: #1c1c2b;
+      padding: 15px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease;
+    }
+
+    .movie-card:hover {
+      transform: scale(1.05);
+    }
+
+    .movie-card img {
+      max-width: 100%;
+      border-radius: 10px;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .movie-title {
+      font-size: 18px;
+      margin: 10px 0;
+      color: #ffcc00;
+    }
+
+    .movie-desc {
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    .download-btn {
+      margin-top: 12px;
+      display: inline-block;
+      background-color: #00c853;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .download-btn:hover {
+      background-color: #00b341;
+    }
+
+    @media (max-width: 500px) {
+      .movie-card img {
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>Moses & Martin Movie Library 🎬</header>
+
+  <div class="container">
+
+    <div class="notice">
+      Only subscribed users can download movies. Subscribe to get free movies and enjoy unlimited downloads!
+    </div>
+
+    <div class="movies-grid">
+      <!-- Movie 1 -->
+      <div class="movie-card">
+        <img src="https://i.ibb.co/PhXKfjL/inception.jpg" alt="Inception">
+        <div class="movie-title">Inception</div>
+        <div class="movie-desc">A thief who steals corporate secrets through dream-sharing tech.</div>
+        <a class="download-btn" href="#">Download</a>
+      </div>
+
+      <!-- Movie 2 -->
+      <div class="movie-card">
+        <img src="https://i.ibb.co/G25CBrz/interstellar.jpg" alt="Interstellar">
+        <div class="movie-title">Interstellar</div>
+        <div class="movie-desc">A team of explorers travel through a wormhole in space.</div>
+        <a class="download-btn" href="#">Download</a>
+      </div>
+
+      <!-- Movie 3 -->
+      <div class="movie-card">
+        <img src="https://i.ibb.co/r2rMb0v/black-panther.jpg" alt="Black Panther">
+        <div class="movie-title">Black Panther</div>
+        <div class="movie-desc">T'Challa returns home to take his place as king of Wakanda.</div>
+        <a class="download-btn" href="#">Download</a>
+      </div>
+
+      <!-- Movie 4 -->
+      <div class="movie-card">
+        <img src="https://i.ibb.co/0X0rQ57/john-wick.jpg" alt="John Wick">
+        <div class="movie-title">John Wick</div>
+        <div class="movie-desc">An ex-hitman comes out of retirement for revenge.</div>
+        <a class="download-btn" href="#">Download</a>
+      </div>
+
+      <!-- Movie 5 -->
+      <div class="movie-card">
+        <img src="https://i.ibb.co/xHM4RP7/avatar.jpg" alt="Avatar">
+        <div class="movie-title">Avatar</div>
+        <div class="movie-desc">A paraplegic Marine dispatched to the moon Pandora.</div>
+        <a class="download-btn" href="#">Download</a>
+      </div>
+
+      <!-- Movie 6 -->
+      <div class="movie-card">
+        <img src="https://i.ibb.co/Z69RbCs/fast-furious.jpg" alt="Fast & Furious">
+        <div class="movie-title">Fast & Furious 9</div>
+        <div class="movie-desc">Dom and his crew face a world-shaking threat.</div>
+        <a class="download-btn" href="#">Download</a>
+      </div>
+
+      <!-- Movie 7 -->
+      <div class="movie-card">
+        <img src="https://i.ibb.co/WvkyWjb/shang-chi.jpg" alt="Shang Chi">
+        <div class="movie-title">Shang-Chi</div>
+        <div class="movie-desc">Shang-Chi confronts the past he thought he left behind.</div>
+        <a class="download-btn" href="#">Download</a>
+      </div>
+
+      <!-- Movie 8 -->
+      <div class="movie-card">
+        <img src="https://i.ibb.co/ZzZgjWs/spiderman.jpg" alt="Spider-Man">
+        <div class="movie-title">Spider-Man: No Way Home</div>
+        <div class="movie-desc">Peter Parker faces multiverse chaos after a spell goes wrong.</div>
+        <a class="download-btn" href="#">Download</a>
+      </div>
+
+      <!-- Movie 9 -->
+      <div class="movie-card">
+        <img src="https://i.ibb.co/KzC0yCg/extraction.jpg" alt="Extraction">
+        <div class="movie-title">Extraction</div>
+        <div class="movie-desc">A black ops mercenary embarks on a dangerous mission in Bangladesh.</div>
+        <a class="download-btn" href="#">Download</a>
+      </div>
+
+      <!-- Movie 10 -->
+      <div class="movie-card">
+        <img src="https://i.ibb.co/jLzrc7S/dune.jpg" alt="Dune">
+        <div class="movie-title">Dune</div>
+        <div class="movie-desc">Paul Atreides must travel to the most dangerous planet in the universe.</div>
+        <a class="download-btn" href="#">Download</a>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
